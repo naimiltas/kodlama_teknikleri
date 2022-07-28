@@ -44,10 +44,13 @@ class _AnasayfaState extends State<Anasayfa> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-       Visibility (
-        visible: kontrol,
-        child: Text("Merhaba")
-        ),
+            Text(kontrol ?  "DOĞRU"  :  "YANLIŞ",
+            style: TextStyle(
+              color:  kontrol ? Colors.blue: Colors.red,
+            ),
+            
+            
+            ),
           RaisedButton(
             child: Text("Durum 1"),
             onPressed: (){
